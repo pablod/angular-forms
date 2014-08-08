@@ -1,0 +1,51 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>Apsa Dashboard</title>
+  <meta name="Métricas de las redes sociales Twitter y Facebook">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  
+  <!-- build:css({.tmp,app}) styles/main.css -->
+  <link rel="stylesheet" href="/main.css">
+  <!-- endbuild -->
+
+  <!--[if lt IE 9]>
+    <script src="bower_components/es5-shim/es5-shim.js"></script>
+    <script src="bower_components/json3/lib/json3.min.js"></script>
+  <![endif]-->
+
+  <!-- build:js scripts/vendor.js -->
+  <script type="text/javascript" src="bower_components/jquery/jquery.js"></script>
+  <script type="text/javascript" src="bower_components/lodash/dist/lodash.js"></script>
+  <script type="text/javascript" src="bower_components/angular/angular.js"></script>
+  <script type="text/javascript" src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+  <script type="text/javascript" src="bower_components/xdate/src/xdate.js"></script>
+  <script type="text/javascript" src="bower_components/angular-translate/angular-translate.js"></script>
+  <!-- endbuild -->
+
+  <!-- build:js scripts/app.js -->
+  <script type="text/javascript" src="app.js"></script>
+  <script type="text/javascript" src="ui-router.js"></script>
+  <script type="text/javascript" src="translations.js"></script>
+  <script type="text/javascript" src="controllers/errors_controller.js"></script>
+  <script type="text/javascript" src="directives/validatable_directive.js"></script>
+  <!-- endbuild -->
+
+</head>
+  <body ng-app="apsa-dashboard">
+    
+    <div class="container">
+
+      <div ui-view="header"></div>
+
+      <div class="content-wrapper" ui-view="content"></div>
+      
+    </div>
+
+  </body>
+</html>

@@ -1,0 +1,11 @@
+.example(ng-controller="ErrorsController")
+  %form.form(name="form" novalidate)
+    .user
+      User:
+      %input(name="usernameCtrl" ng-model="username" ng-required="true" validatable="true")
+    .pass
+      Pass:
+      %input(name="passwordCtrl" ng-model="userpass" ng-required="true" validatable="true")
+    .email
+      Email:
+      %input(name="emailCtrl" ng-model="useremail" ng-required="true" type="email" validatable="true")
